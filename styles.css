@@ -10,10 +10,14 @@
     width: 100%;
     margin-inline: auto;
     border: 0 solid red;
-    
-    
- }
+  }
 
+ .sejarah {
+    width: 95%;
+    margin-inline: auto;
+    border: 0px solid red;
+    text-align: justify;
+  } 
 
 .boxhero {
     /* background-image: linear-gradient(rgba(63, 63, 63, 0.6), rgba(0, 0, 0, 0.075)) ,url(http://localhost/ikbsmansa/hbhmedan.jpg); */
@@ -72,18 +76,43 @@
     
   }
 
-  footer {
+ footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px;
+ }
+
+
+  /* footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #000000f7;
   color: white;
-  /* padding: 2px; */
- }
+  padding: 2px;
+ } */
 
-  footer p span {
+  /* footer p span {
   font-weight: bold;
   font-size: 12px;
+ } */
+
+ footer p span {
+  font-weight: bold;
+ }
+
+ footer .social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ }
+
+ footer .social a {
+  color: white;
+  font-size: 28px;
  }
 
  .head1 {
@@ -98,5 +127,158 @@
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+     footer {
+      flex-direction: column;
+      gap: 30px;
+     }
+     footer p {
+      order:2
+     }
 
-      
+     footer .social {
+       order:1;
+     }
+ }
+
+
+.sejarah ol {
+
+  list-style-type: none;
+}
+
+.kontak {
+
+width: 95%;
+margin-inline: auto;
+border: 0px solid rgb(15, 14, 14);
+text-align: justify;
+padding: 10px;
+/* background-color: goldenrod; */
+background-color: rgba(248, 180, 33, 0.5);
+font-family: 'Courier New', Courier, monospace;
+color: #ffffff;
+font-size: 18px;
+
+}
+
+
+.boxkontak {
+    background-image: linear-gradient(rgba(63, 63, 63, 0.4), rgba(0, 0, 0, 0.5)) ,url(sekolah.jpg);
+    width: 95%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-radius: 15px;
+    margin-top: 25px;
+    
+}
+
+.containerkontak {
+    width: 100%;
+    margin-inline: auto;
+    border: 0px solid red;
+    justify-items: center;
+  }
+
+  .lgsocial {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .lgsocial a {
+    color:#090909;
+  }
+  
+  .boxbeasiswa {
+    background-image: linear-gradient(rgba(63, 63, 63, 0.6), rgba(0, 0, 0, 0.5)) ,url(beasiswa.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(244, 230, 25);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-radius: 15px;
+    margin-top: 25px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu1 {
+  background-color: rgb(49, 133, 34);
+  transition: background-color 0.3s ease;
+  
+}
+
+.menu1:hover {
+  background-color: rgba(54, 94, 181, 0.792);
+  
+} 
+
+.menu1 a {
+  color:white;
+  text-decoration: none;
+  font-size:16px;
+  }
+
+.donasi {
+
+width: 100%;
+margin-inline: auto;
+border: 0px solid rgb(15, 14, 14);
+text-align: justify;
+padding: 10px;
+background-color: rgb(225, 225, 224);
+font-family: 'Courier New', Courier, monospace;
+color: #090909;
+font-size: 18px;
+
+}
+
+.boxkegiatan {
+    background-image: linear-gradient(rgba(63, 63, 63, 0.6), rgba(0, 0, 0, 0.5)) ,url(pengajian.jpeg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(244, 189, 25);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-radius: 15px;
+    margin-top: 25px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.boxaktifitas {
+    /* background-image: linear-gradient(rgba(63, 63, 63, 0.6), rgba(0, 0, 0, 0.5)) ,url(pengajian.jpeg); */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(244, 189, 25);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-radius: 15px;
+    margin-top: 25px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ .carcontainer {
+    width: 100%;
+    margin-inline: auto;
+    border: 0 solid red;
+    color: #f50c0c;
+}
+
+.carousel-caption {
+
+  color: #070707;
+  background-color: aliceblue;
+}
